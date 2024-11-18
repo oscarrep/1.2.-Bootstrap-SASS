@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.col2 {
-  display: flex;
-}
-
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -7519,8 +7515,24 @@ textarea.form-control-lg {
   top: 0 !important;
 }
 
+.top-15 {
+  top: 15% !important;
+}
+
+.top-25 {
+  top: 25% !important;
+}
+
 .top-50 {
   top: 50% !important;
+}
+
+.top-70 {
+  top: 70% !important;
+}
+
+.top-75 {
+  top: 75% !important;
 }
 
 .top-100 {
@@ -7531,8 +7543,24 @@ textarea.form-control-lg {
   bottom: 0 !important;
 }
 
+.bottom-15 {
+  bottom: 15% !important;
+}
+
+.bottom-25 {
+  bottom: 25% !important;
+}
+
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-70 {
+  bottom: 70% !important;
+}
+
+.bottom-75 {
+  bottom: 75% !important;
 }
 
 .bottom-100 {
@@ -7543,8 +7571,24 @@ textarea.form-control-lg {
   left: 0 !important;
 }
 
+.start-15 {
+  left: 15% !important;
+}
+
+.start-25 {
+  left: 25% !important;
+}
+
 .start-50 {
   left: 50% !important;
+}
+
+.start-70 {
+  left: 70% !important;
+}
+
+.start-75 {
+  left: 75% !important;
 }
 
 .start-100 {
@@ -7555,8 +7599,24 @@ textarea.form-control-lg {
   right: 0 !important;
 }
 
+.end-15 {
+  right: 15% !important;
+}
+
+.end-25 {
+  right: 25% !important;
+}
+
 .end-50 {
   right: 50% !important;
+}
+
+.end-70 {
+  right: 70% !important;
+}
+
+.end-75 {
+  right: 75% !important;
 }
 
 .end-100 {
@@ -9301,6 +9361,78 @@ textarea.form-control-lg {
 
 .z-3 {
   z-index: 3 !important;
+}
+
+.w-0 {
+  width: 0 !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.w-35 {
+  width: 35% !important;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-0 {
+  height: 0 !important;
+}
+
+.h-15 {
+  height: 15% !important;
+}
+
+.h-25 {
+  height: 25% !important;
+}
+
+.h-35 {
+  height: 35% !important;
+}
+
+.h-40 {
+  height: 40% !important;
+}
+
+.h-50 {
+  height: 50% !important;
+}
+
+.h-60 {
+  height: 60% !important;
+}
+
+.h-75 {
+  height: 75% !important;
+}
+
+.h-100 {
+  height: 100% !important;
 }
 
 @media (min-width: 576px) {

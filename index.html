@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="overflow-hidden">
   <!--BOOTRSTRAP-->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -24,14 +24,25 @@
     </div>
   </nav>
 
+  <!--CONTAINER 1-->
   <div class="container">
-    <h1 class="text-title">A Simple Bookmark Manager</h1>
-    <p class="text-par">A clean and simple interface to organize your favourite websites.
-      Open a new browser tab and see your sites load instantly.
-      Try it for free.</hp>
-    <div>
-      <button class="btn btn-primary btn-lg shadow-sm">Get it on Chrome</button>
-      <button class="btn btn-light btn-lg shadow-sm">Get it on Firefox</button>
+    <div class="row flex-grow-1 min-vh-100 position-relative">
+      <div class="col my-auto">
+        <h1 class="text-title">A Simple Bookmark Manager</h1>
+        <p class="text-par">
+          A clean and simple interface to organize your favourite websites.
+          Open a new browser tab and see your sites load instantly.
+          Try it for free.
+          </hp>
+        <div>
+          <button class="btn btn-primary btn-lg shadow-sm">Get it on Chrome</button>
+          <button class="btn btn-light btn-lg shadow-sm">Get it on Firefox</button>
+        </div>
+      </div>
+      <div class="col my-auto">
+        <img src="./LandingPage/Imagenes/illustration-hero.svg" class="img-fluid position-relative">
+        <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-35 bottom-25 start-70"></div>
+      </div>
     </div>
   </div>
 

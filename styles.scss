@@ -9,9 +9,38 @@ $custom-colors: (
     "par":#a3a3a3,
 );
 
+$position-values: (
+    0: 0,
+    15: 15%,
+    25: 25%,
+    50: 50%,
+    70: 70%,
+    75: 75%,
+    100: 100%
+);
+
+$custom-sizes: (
+    0: 0,
+    15: 15%,
+    25: 25%,
+    35: 35%,
+    40: 40%,
+    50: 50%,
+    60: 60%,
+    75: 75%,
+    100: 100%
+);
+
+$utilities: (
+    "size-width": (property: width,
+        class: w,
+        values: $custom-sizes ),
+    "size-height": (property: height,
+        class: h,
+        values: $custom-sizes )
+);
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-.col2{
-    display: flex;
-}
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/utilities";
