@@ -1,6 +1,17 @@
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
 
-$theme-colors: (
+$custom-colors: (
     "primary": #5265E1,
-    "secondary": #FA5959
+    "secondary": #FA5959,
+    "title":#212435,
+    "par":#a3a3a3,
 );
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+.col2{
+    display: flex;
+}
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
