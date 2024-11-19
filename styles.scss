@@ -15,14 +15,19 @@ $custom-colors: (
 
 $position-values: (
     0: 0,
+    10: 10%,
     15: 15%,
     25: 25%,
+    30: 30%,
     40: 40%,
     50: 50%,
     60: 60%,
     70: 70%,
     75: 75%,
-    100: 100%
+    80: 80%,
+    95: 95%,
+    100: 100%,
+    110: 110%
 );
 
 $custom-sizes: (
@@ -30,11 +35,14 @@ $custom-sizes: (
     15: 15%,
     25: 25%,
     35: 35%,
+    30: 30%,
     40: 40%,
+    45: 45%,
     50: 50%,
     60: 60%,
     75: 75%,
-    100: 100%
+    100: 100%,
+    img-y: 416px
 );
 
 $utilities: (
@@ -48,5 +56,5 @@ $utilities: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/bootstrap";
 @import "./node_modules/bootstrap/scss/utilities";

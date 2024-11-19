@@ -7519,12 +7519,20 @@ textarea.form-control-lg {
   top: 0 !important;
 }
 
+.top-10 {
+  top: 10% !important;
+}
+
 .top-15 {
   top: 15% !important;
 }
 
 .top-25 {
   top: 25% !important;
+}
+
+.top-30 {
+  top: 30% !important;
 }
 
 .top-40 {
@@ -7547,12 +7555,28 @@ textarea.form-control-lg {
   top: 75% !important;
 }
 
+.top-80 {
+  top: 80% !important;
+}
+
+.top-95 {
+  top: 95% !important;
+}
+
 .top-100 {
   top: 100% !important;
 }
 
+.top-110 {
+  top: 110% !important;
+}
+
 .bottom-0 {
   bottom: 0 !important;
+}
+
+.bottom-10 {
+  bottom: 10% !important;
 }
 
 .bottom-15 {
@@ -7561,6 +7585,10 @@ textarea.form-control-lg {
 
 .bottom-25 {
   bottom: 25% !important;
+}
+
+.bottom-30 {
+  bottom: 30% !important;
 }
 
 .bottom-40 {
@@ -7583,12 +7611,28 @@ textarea.form-control-lg {
   bottom: 75% !important;
 }
 
+.bottom-80 {
+  bottom: 80% !important;
+}
+
+.bottom-95 {
+  bottom: 95% !important;
+}
+
 .bottom-100 {
   bottom: 100% !important;
 }
 
+.bottom-110 {
+  bottom: 110% !important;
+}
+
 .start-0 {
   left: 0 !important;
+}
+
+.start-10 {
+  left: 10% !important;
 }
 
 .start-15 {
@@ -7597,6 +7641,10 @@ textarea.form-control-lg {
 
 .start-25 {
   left: 25% !important;
+}
+
+.start-30 {
+  left: 30% !important;
 }
 
 .start-40 {
@@ -7619,12 +7667,28 @@ textarea.form-control-lg {
   left: 75% !important;
 }
 
+.start-80 {
+  left: 80% !important;
+}
+
+.start-95 {
+  left: 95% !important;
+}
+
 .start-100 {
   left: 100% !important;
 }
 
+.start-110 {
+  left: 110% !important;
+}
+
 .end-0 {
   right: 0 !important;
+}
+
+.end-10 {
+  right: 10% !important;
 }
 
 .end-15 {
@@ -7633,6 +7697,10 @@ textarea.form-control-lg {
 
 .end-25 {
   right: 25% !important;
+}
+
+.end-30 {
+  right: 30% !important;
 }
 
 .end-40 {
@@ -7655,8 +7723,20 @@ textarea.form-control-lg {
   right: 75% !important;
 }
 
+.end-80 {
+  right: 80% !important;
+}
+
+.end-95 {
+  right: 95% !important;
+}
+
 .end-100 {
   right: 100% !important;
+}
+
+.end-110 {
+  right: 110% !important;
 }
 
 .translate-middle {
@@ -9415,8 +9495,16 @@ textarea.form-control-lg {
   width: 35% !important;
 }
 
+.w-30 {
+  width: 30% !important;
+}
+
 .w-40 {
   width: 40% !important;
+}
+
+.w-45 {
+  width: 45% !important;
 }
 
 .w-50 {
@@ -9435,6 +9523,10 @@ textarea.form-control-lg {
   width: 100% !important;
 }
 
+.w-img-y {
+  width: 416px !important;
+}
+
 .h-0 {
   height: 0 !important;
 }
@@ -9451,8 +9543,16 @@ textarea.form-control-lg {
   height: 35% !important;
 }
 
+.h-30 {
+  height: 30% !important;
+}
+
 .h-40 {
   height: 40% !important;
+}
+
+.h-45 {
+  height: 45% !important;
 }
 
 .h-50 {
@@ -9469,6 +9569,10 @@ textarea.form-control-lg {
 
 .h-100 {
   height: 100% !important;
+}
+
+.h-img-y {
+  height: 416px !important;
 }
 
 @media (min-width: 576px) {
