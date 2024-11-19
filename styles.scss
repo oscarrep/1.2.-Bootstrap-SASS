@@ -2,6 +2,10 @@
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/mixins";
 
+.centered {
+    text-align: center;
+}
+
 $custom-colors: (
     "primary": #5265E1,
     "secondary": #FA5959,
@@ -13,7 +17,9 @@ $position-values: (
     0: 0,
     15: 15%,
     25: 25%,
+    40: 40%,
     50: 50%,
+    60: 60%,
     70: 70%,
     75: 75%,
     100: 100%

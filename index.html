@@ -8,55 +8,148 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="overflow-hidden">
+<body>
   <!--BOOTRSTRAP-->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!--NAVBAR-->
-  <nav class="navbar navbar-expand-md navbar-light bg-white">
-    <div class="container my-4">
-      <a class="navbar-brand" href="#">
-        <img src="./LandingPage/Imagenes/logo-bookmark.svg" class="img-fluid position-relative">
-      </a>
-      <div class="ml-auto d-flex align-items-center">
-        <a class="nav-link active mx-5" href="#">FEATURES</a>
-        <a class="nav-link active mx-5" href="#">PRICING</a>
-        <a class="nav-link active mx-5" href="#">CONTACT</a>
-        <button type="button" class="btn btn-secondary shadow-sm text-white btn-sm px-4 py-2">LOGIN</button>
-      </div>
-    </div>
-  </nav>
-
-  <!--CONTAINER 1-->
-  <div class="container">
-    <div class="row flex-grow-1 position-relative gx-5" style="height: 75vh;">
-      <div class="col my-auto">
-        <h1 class="text-title">A Simple Bookmark Manager</h1>
-        <p class="text-par">
-          A clean and simple interface to organize your favourite websites.
-          Open a new browser tab and see your sites load instantly.
-          Try it for free.
-        </p>
-        <div class="align-items-center">
-          <button class="btn btn-primary shadow-sm">Get it on Chrome</button>
-          <button class="btn btn-light shadow-sm mx-3">Get it on Firefox</button>
+  <div class="container-fluid overflow-hidden">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+      <div class="container my-4">
+        <a class="navbar-brand" href="#">
+          <img src="./LandingPage/Imagenes/logo-bookmark.svg" class="img-fluid position-relative">
+        </a>
+        <div class="ml-auto d-flex align-items-center">
+          <a class="nav-link active mx-5" href="#">FEATURES</a>
+          <a class="nav-link active mx-5" href="#">PRICING</a>
+          <a class="nav-link active mx-5" href="#">CONTACT</a>
+          <button type="button" class="btn btn-secondary shadow-sm text-white btn-sm px-4 py-2">LOGIN</button>
         </div>
       </div>
-      <div class="col my-auto">
-        <img src="./LandingPage/Imagenes/illustration-hero.svg" class="img-fluid position-relative">
-        <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-50 bottom-15 start-70"></div>
+    </nav>
+
+    <div class="container">
+
+      <div class="row flex-grow-1 position-relative gx-5" style="height: 75vh;"> <!--ROW MAIN-->
+        <div class="col my-auto">
+          <h1 class="text-title">A Simple Bookmark Manager</h1>
+          <p class="text-par">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly.
+            Try it for free.
+          </p>
+          <div class="align-items-center">
+            <button class="btn btn-primary shadow-sm">Get it on Chrome</button>
+            <button class="btn btn-light shadow-sm mx-3">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="col my-auto">
+          <img src="./LandingPage/Imagenes/illustration-hero.svg" class="img-fluid position-relative">
+          <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-50 bottom-15 start-70"></div>
+        </div>
       </div>
+
+      <div class="row justify-content-center"> <!--ROW FEATURES-->
+        <div class="col-8 ">
+          <h3 class="text-title centered">Features</h3>
+          <p class="text-par centered">
+            Our aim is to make it quick and easy for you to access your favourite websites.
+            Your bookmarks sync between your devices so you can sccess them on the go.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center position-relative"> <!--ROW TAB-->
+
+        <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-75 top-40 end-70"></div> <!--PILL-->
+
+        <div class="col-10">
+          <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+
+            <li class="nav-item" role="presentation"> <!--TAB 1-->
+              <button class="nav-link text-muted active" id="bookmarking-tab" data-bs-toggle="tab"
+                data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">
+                Simple Bookmarking </button>
+            </li>
+            <li class="nav-item" role="presentation"> <!--TAB 2-->
+              <button class="nav-link text-muted" id="searching-tab" data-bs-toggle="tab" data-bs-target="#searching"
+                type="button" role="tab" aria-controls="searching" aria-selected="false"> Speedy Searching </button>
+            </li>
+            <li class="nav-item" role="presentation"> <!--TAB 3-->
+              <button class="nav-link text-muted" id="sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing"
+                type="button" role="tab" aria-controls="sharing" aria-selected="false"> Easy Sharing </button>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="tab-content" id="myTabContent"> <!--TAB CONTENT-->
+
+          <div class="tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="bookmarking-tab">
+            <!--CONTENT 1-->
+
+            <div class="row justify-content-center align-items-center py-5">
+              <div class="col">
+                <img src="./LandingPage/Imagenes/illustration-features-tab-1.svg" class="img-fluid position-relative">
+              </div>
+              <div class="col-5 my-4">
+                <h3 class="text-title"> Bookmark in one click </h3>
+                <p class="text-par">
+                  Organize tour bookmarks however you like.
+                  Our simple drag-and-drop interface gives you complete
+                  control over how you manage your favourite sites.
+                </p>
+                <div class="align-items-center">
+                  <button class="btn btn-primary shadow-sm">More Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="searching-tab"> <!--CONTENT 2-->
+
+            <div class="row justify-content-center align-items-center py-5">
+              <div class="col">
+                <img src="./LandingPage/Imagenes/illustration-features-tab-2.svg" class="img-fluid position-relative">
+              </div>
+              <div class="col-5 my-4">
+                <h3 class="text-title"> Intelligent search </h3>
+                <p class="text-par">
+                  Our powerfull research feature will help you find saved sites
+                  in no time at all. no need to trawl through all of your bookmarks.
+                </p>
+                <div class="align-items-center">
+                  <button class="btn btn-primary shadow-sm">More Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="sharing" role="tabpanel" aria-labelledby="sharing-tab"> <!--CONTENT 3-->
+
+            <div class="row justify-content-center align-items-center py-5">
+              <div class="col">
+                <img src="./LandingPage/Imagenes/illustration-features-tab-3.svg" class="img-fluid position-relative">
+              </div>
+              <div class="col-5 my-4">
+                <h3 class="text-title"> Share your bookmarks </h3>
+                <p class="text-par">
+                  Easilly share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a button.
+                </p>
+                <div class="align-items-center">
+                  <button class="btn btn-primary shadow-sm">More Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="row flex-grow-1 gx-5">
-      <div class="col">
-        <h3 class="text-title">Features</h3>
-        <p class="text-par">
-          Our aim is to make it quick and easy for you to access your favourite websites. 
-          Your bookmarks sync between your devices so you can sccess them on the go.
-        </p>
-      </div>
-    </div>
   </div>
 </body>
 
