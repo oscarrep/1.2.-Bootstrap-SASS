@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WEBPAGE</title>
+  <title>BOOKMARK</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,38 +12,45 @@
   <!--BOOTRSTRAP-->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-
   <!--NAVBAR-->
-  <nav class="navbar navbar-expand-md navbar-light bg-white justify-content-center">
-    <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <a class="nav-link active" href="#">FEATURES</a>
-      <a class="nav-link active" href="#">PRICING</a>
-      <a class="nav-link active" href="#">CONTACT</a>
-      <button type="button" class="btn btn-secondary btn-lg shadow">LOGIN</button>
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <div class="container my-4">
+      <a class="navbar-brand" href="#">
+        <img src="./LandingPage/Imagenes/logo-bookmark.svg" class="img-fluid position-relative">
+      </a>
+      <div class="ml-auto d-flex align-items-center">
+        <a class="nav-link active mx-5" href="#">FEATURES</a>
+        <a class="nav-link active mx-5" href="#">PRICING</a>
+        <a class="nav-link active mx-5" href="#">CONTACT</a>
+        <button type="button" class="btn btn-secondary shadow-sm text-white btn-sm px-4 py-2">LOGIN</button>
+      </div>
     </div>
   </nav>
 
   <!--CONTAINER 1-->
   <div class="container">
-    <div class="row flex-grow-1 min-vh-100 position-relative">
+    <div class="row flex-grow-1 position-relative gx-5" style="height: 75vh;">
       <div class="col my-auto">
         <h1 class="text-title">A Simple Bookmark Manager</h1>
         <p class="text-par">
           A clean and simple interface to organize your favourite websites.
           Open a new browser tab and see your sites load instantly.
           Try it for free.
-          </hp>
-        <div>
-          <button class="btn btn-primary btn-lg shadow-sm">Get it on Chrome</button>
-          <button class="btn btn-light btn-lg shadow-sm">Get it on Firefox</button>
+        </p>
+        <div class="align-items-center">
+          <button class="btn btn-primary shadow-sm">Get it on Chrome</button>
+          <button class="btn btn-light shadow-sm mx-3">Get it on Firefox</button>
         </div>
       </div>
       <div class="col my-auto">
         <img src="./LandingPage/Imagenes/illustration-hero.svg" class="img-fluid position-relative">
-        <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-35 bottom-25 start-70"></div>
+        <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-50 bottom-15 start-70"></div>
       </div>
     </div>
+  </div>
+
+  <div class="container">
+    
   </div>
 
 </body>
