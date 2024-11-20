@@ -45,14 +45,14 @@
         </div>
         <div class="col my-auto">
           <img src="./LandingPage/Imagenes/illustration-hero.svg" class="img-fluid">
-          <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-50 bottom-15 start-70"></div>
+          <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-50 bottom-15 start-65"></div> <!--PILL-->
         </div>
       </div>
 
       <div class="row justify-content-center"> <!--ROW FEATURES-->
         <div class="col-7 ">
-          <h3 class="text-title centered">Features</h3>
-          <p class="text-par centered">
+          <h3 class="text-title text-center">Features</h3>
+          <p class="text-par text-center">
             Our aim is to make it quick and easy for you to access your favourite websites.
             Your bookmarks sync between your devices so you can sccess them on the go.
           </p>
@@ -61,22 +61,22 @@
 
       <div class="row justify-content-center py-5 position-relative"> <!--ROW TAB-->
 
-        <div class="col-10">
-          <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <div class="col-8">
+          <ul class="nav nav-tabs nav-justified custom-tabs" id="myTab" role="tablist">
 
             <li class="nav-item" role="presentation"> <!--TAB 1-->
-              <button class="nav-link text-muted active" id="bookmrkng-tab" data-bs-toggle="tab"
+              <button class="nav-link active" id="bookmrkng-tab" data-bs-toggle="tab"
                 data-bs-target="#bookmrkng" type="button" role="tab" aria-controls="bookmrkng" aria-selected="true">
                 Simple Bookmarking
               </button>
             </li>
             <li class="nav-item" role="presentation"> <!--TAB 2-->
-              <button class="nav-link text-muted" id="searching-tab" data-bs-toggle="tab" data-bs-target="#searching"
+              <button class="nav-link" id="searching-tab" data-bs-toggle="tab" data-bs-target="#searching"
                 type="button" role="tab" aria-controls="searching" aria-selected="false"> Speedy Searching
               </button>
             </li>
             <li class="nav-item" role="presentation"> <!--TAB 3-->
-              <button class="nav-link text-muted" id="sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing"
+              <button class="nav-link" id="sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing"
                 type="button" role="tab" aria-controls="sharing" aria-selected="false"> Easy Sharing
               </button>
             </li>
@@ -87,64 +87,58 @@
 
           <div class="tab-pane show active" id="bookmrkng" aria-labelledby="bookmrkng-tab"> <!--CONTENT 1-->
 
-            <div class="row justify-content-center align-items-center py-5">
-              <div class="col">
-                <img src="./LandingPage/Imagenes/illustration-features-tab-1.svg" class="img-fluid">
-                <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-60 end-70" style="top: 38%"></div>
+            <div class="row py-5 d-flex align-items-center">
+              <div class="col-md-6">
+                <img src="./LandingPage/Imagenes/illustration-features-tab-1.svg" class="img-fluid tab-img">
+                <div class="rounded-pill bg-primary position-absolute z-n1 w-100 h-60 end-75" style="top: 38%"></div>
                 <!--PILL-->
               </div>
-              <div class="col-5 my-4">
+              <div class="col-md-5 offset-md-1">
                 <h3 class="text-title"> Bookmark in one click </h3>
                 <p class="text-par">
                   Organize tour bookmarks however you like.
                   Our simple drag-and-drop interface gives you complete
                   control over how you manage your favourite sites.
                 </p>
-                <div class="align-items-center">
-                  <button class="btn btn-primary shadow-sm">More Info</button>
-                </div>
+                <button class="btn btn-primary shadow-sm px-4 py-2">More Info</button>
               </div>
             </div>
           </div>
 
           <div class="tab-pane" id="searching" aria-labelledby="searching-tab"> <!--CONTENT 2-->
 
-            <div class="row justify-content-center align-items-center py-5">
-              <div class="col">
-                <img src="./LandingPage/Imagenes/illustration-features-tab-2.svg" class="img-fluid">
-                <div class="rounded-pill bg-primary position-absolute z-n1 w-100 end-70"
+            <div class="row py-5 d-flex align-items-center">
+              <div class="col-md-6">
+                <img src="./LandingPage/Imagenes/illustration-features-tab-2.svg" class="img-fluid tab-img">
+                <div class="rounded-pill bg-primary position-absolute z-n1 w-100 end-75"
                   style="top: 34%; height: 53.5%"></div> <!--PILL-->
               </div>
-              <div class="col-5 my-4">
+              <div class="col-md-5 offset-md-1">
                 <h3 class="text-title"> Intelligent search </h3>
                 <p class="text-par">
                   Our powerfull research feature will help you find saved sites
                   in no time at all. no need to trawl through all of your bookmarks.
                 </p>
-                <div class="align-items-center">
-                  <button class="btn btn-primary shadow-sm">More Info</button>
-                </div>
+                <button class="btn btn-primary shadow-sm px-4 py-2">More Info</button>
               </div>
             </div>
           </div>
 
           <div class="tab-pane" id="sharing" aria-labelledby="sharing-tab"> <!--CONTENT 3-->
 
-            <div class="row justify-content-center align-items-center py-5">
-              <div class="col">
-                <img src="./LandingPage/Imagenes/illustration-features-tab-3.svg" class="img-fluid">
-                <div class="rounded-pill bg-primary position-absolute z-n1 w-100 end-70"
+            <div class="row py-5 d-flex align-items-center">
+              <div class="col-md-6">
+                <img src="./LandingPage/Imagenes/illustration-features-tab-3.svg" class="img-fluid tab-img">
+                <div class="rounded-pill bg-primary position-absolute z-n1 w-100 end-75"
                   style="top: 36%; height: 56.5%"></div> <!--PILL-->
               </div>
-              <div class="col-5 my-4">
+              <div class="col-md-5 offset-md-1">
                 <h3 class="text-title"> Share your bookmarks </h3>
                 <p class="text-par">
                   Easilly share your bookmarks and collections with others.
                   Create a shareable link that you can send at the click of a button.
                 </p>
-                <div class="align-items-center">
-                  <button class="btn btn-primary shadow-sm">More Info</button>
-                </div>
+                <button class="btn btn-primary shadow-sm px-4 py-2">More Info</button>
               </div>
             </div>
           </div>
@@ -154,45 +148,54 @@
       <div class="row justify-content-center py-5"> <!--ROW DOWNLOAD-->
 
         <div class="col-7 ">
-          <h3 class="text-title centered">Download the extension</h3>
-          <p class="text-par centered">
+          <h3 class="text-title text-center">Download the extension</h3>
+          <p class="text-par text-center">
             We've got more browsers in the pipeline.
             Please do let us know if you've got a favourite you'd like us to prioritize.
           </p>
         </div>
       </div>
 
-      <div class="row py-5 justify-content-center"><!--ROW CARDS-->
-        
-          <div class="card mx-3 shadow" style="width: 25%;"> <!--CHROME-->
-            <img src="./LandingPage/Imagenes/logo-chrome.svg" class="card-img-top" style="max-height: 60%; max-width: 60%;">
-            <div class="card-body">
-              <h5 class="card-title"> Add to Chrome </h5>
-              <p class="card-text"> Minimum version 62 </p>
+      <div class="row py-2 justify-content-center"><!--ROW CARDS-->
+        <div class="col-3">
+          <div class="card mx-3 shadow"> <!--CHROME-->
+            <div class="card-body align-items-center d-flex flex-column">
+              <img src="./LandingPage/Imagenes/logo-chrome.svg" class="card-img-top py-3"
+                style="max-height: 59%; max-width: 59%;">
+              <h5 class="card-title text-center"> Add to Chrome </h5>
+              <p class="card-text text-center"> Minimum version 62 </p>
               <img src="./LandingPage/Imagenes/bg-dots.svg" class="card-img-top">
-              <a href="3" class="btn btn-primary"> Add & Install Extension </a>
+              <a href="3" class="btn btn-primary my-3 px-3 py-2"> Add & Install Extension </a>
             </div>
           </div>
-
-          <div class="card mx-3 shadow" style="width: 25%;"> <!--FIREFOX-->
-            <img src="./LandingPage/Imagenes/logo-firefox.svg" class="card-img-top" style="max-height: 60%; max-width: 60%;">
-            <div class="card-body">
-              <h5 class="card-title"> Add to Firefox </h5>
-              <p class="card-text"> Minimum version 55 </p>
-              <img src="./LandingPage/Imagenes/bg-dots.svg" class="card-img-top">
-              <a href="3" class="btn btn-primary"> Add & Install Extension </a>
-            </div>
-          </div>
-
-          <div class="card mx-3 shadow" style="width: 25%;"> <!--OPERA-->
-            <img src="./LandingPage/Imagenes/logo-opera.svg" class="card-img-top" style="max-height: 60%; max-width: 60%;">
-            <div class="card-body">
-              <h5 class="card-title"> Add to Opera </h5>
-              <p class="card-text"> Minimum version 46 </p>
-              <img src="./LandingPage/Imagenes/bg-dots.svg" class="card-img-top">
-              <a href="3" class="btn btn-primary"> Add & Install Extension </a>
-            </div>
         </div>
+
+        <div class="col-3">
+          <div class="card mx-3 shadow top-10"> <!--FIREFOX-->
+            <div class="card-body align-items-center d-flex flex-column">
+              <img src="./LandingPage/Imagenes/logo-firefox.svg" class="card-img-top py-3"
+                style="max-height: 60%; max-width: 60%;">
+              <h5 class="card-title text-center"> Add to Firefox </h5>
+              <p class="card-text text-center"> Minimum version 55 </p>
+              <img src="./LandingPage/Imagenes/bg-dots.svg" class="card-img-top">
+              <a href="3" class="btn btn-primary my-3 px-3 py-2"> Add & Install Extension </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card mx-3 shadow top-25"> <!--OPERA-->
+            <div class="card-body align-items-center d-flex flex-column">
+              <img src="./LandingPage/Imagenes/logo-opera.svg" class="card-img-top py-3"
+                style="max-height: 55%; max-width: 55%;">
+              <h5 class="card-title text-center"> Add to Opera </h5>
+              <p class="card-text text-center"> Minimum version 46 </p>
+              <img src="./LandingPage/Imagenes/bg-dots.svg" class="card-img-top">
+              <a href="3" class="btn btn-primary my-3 px-3 py-2"> Add & Install Extension </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
