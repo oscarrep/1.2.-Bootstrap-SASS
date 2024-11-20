@@ -39,6 +39,7 @@ $custom-sizes: (
     40: 40%,
     45: 45%,
     50: 50%,
+    55: 55%,
     60: 60%,
     75: 75%,
     100: 100%,
@@ -53,6 +54,16 @@ $utilities: (
         class: h,
         values: $custom-sizes )
 );
+
+.nab-tabs .nav-link {
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    border: none;
+}
+
+
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
