@@ -1,6 +1,12 @@
 @import "./node_modules/bootstrap/scss/functions";
-@import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/mixins";
+
+$accordion-icon-active-color: #FA5959;
+$accordion-icon-color: #5265E1;
+
+$accordion-button-active-bg: white;
+
+@import "./node_modules/bootstrap/scss/variables";
 
 $custom-colors: (
     "primary": #5265E1,
