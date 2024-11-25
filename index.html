@@ -93,8 +93,8 @@
               Try it for free.
             </p>
             <div class="d-flex justify-content-center"> <!--centers buttons-->
-              <button class="btn btn-primary shadow">Get it on Chrome</button>
-              <button class="btn btn-light shadow mx-3">Get it on Firefox</button>
+              <button class="btn btn-primary text-white shadow">Get it on Chrome</button>
+              <button class="btn btn-light text-title shadow mx-3">Get it on Firefox</button>
             </div>
           </div>
         </div>
@@ -579,7 +579,7 @@
                 Whoops, make sure it's an email</div>
             </div>
             <div class="col-4">
-              <button type="submit" class="btn btn-secondary text-white btn-sm px-4 py-2">Contact Us</button>
+              <button type="submit" class="btn btn-secondary text-white btn-sm px-2 py-2">Contact Us</button>
             </div>
           </form>
         </div>
@@ -599,8 +599,10 @@
             <a class="nav-link active text-white" href="#">PRICING</a>
             <a class="nav-link active text-white" href="#">CONTACT</a>
             <div>
-              <a href="#"><img src="./LandingPage/Imagenes/icon-facebook.svg" class="mx-3 img-fluid logo"></a>
-              <a href="#"><img src="./LandingPage/Imagenes/icon-twitter.svg" class="mx-3 img-fluid logo"></a>
+              <a href="#"><img onmouseenter="hoverF(this)" onmouseleave="unHoverF(this)"
+                  src="./LandingPage/Imagenes/icon-facebook.svg" class="mx-3 img-fluid fb"></a>
+              <a href="#"><img onmouseenter="hoverT(this)" onmouseleave="unHoverT(this)"
+                  src="./LandingPage/Imagenes/icon-twitter.svg" class="mx-3 img-fluid twt"></a>
             </div>
           </div>
         </nav>
@@ -608,7 +610,20 @@
     </footer>
 
     <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
+
+      function hoverF(image) {
+        image.src = './LandingPage/Imagenes/icon-facebook2.svg';
+      }
+      function unHoverF(image) {
+        image.src = './LandingPage/Imagenes/icon-facebook.svg';
+      }
+      function hoverT(image) {
+        image.src = './LandingPage/Imagenes/icon-twitter2.svg';
+      }
+      function unHoverT(image) {
+        image.src = './LandingPage/Imagenes/icon-twitter.svg';
+      }
+
       (function () {
         'use strict'
 

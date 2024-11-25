@@ -17,6 +17,7 @@ $custom-colors: (
     "white": #ffffff,
     "title":#212435,
     "par":#a3a3a3,
+    "light":#e6e6e67a,
 );
 
 $position-values: (
@@ -133,13 +134,40 @@ $utilities: (
     z-index: 10;
 }
 
-.card{
-border: none !important;
+.card {
+    border: none !important;
+}
+
+.btn-secondary:hover {
+    color: #FA5959 !important;
+    background-color: white !important;
+    border-color: #FA5959 !important;
+    border-width: 1px !important;
+}
+
+.btn-primary:hover {
+    color: #5265E1 !important;
+    background-color: white !important;
+    border-color: #5265E1 !important;
+    border-width: 1px !important;
+}
+
+.btn-light:hover {
+    color: #747474 !important;
+    background-color: white !important;
+    border-color: #747474 !important;
+    border-width: 1px !important;
+}
+
+.nav-link:hover {
+    color: #FA5959 !important;
+}
+
+.accordion-button:hover {
+    color: #FA5959 !important;
 }
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
-
-
 
 // DESKTOP
 @media (min-width: 768px) {
