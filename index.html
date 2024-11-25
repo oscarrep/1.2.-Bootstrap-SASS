@@ -17,15 +17,19 @@
     <div class="d-block d-md-none"> <!-- NAVBAR MOBILE ONLY-->
       <nav class="navbar navbar-expand-md navbar-light bg-white">
 
-        <div class="container my-4">
-          <a class="navbar-brand" href="#">
-            <img src="./LandingPage/Imagenes/logo-bookmark.svg" class="img-fluid">
-          </a>
+        <div class="row my-4 justify-content-between">
+          <div class="col">
+            <a class="navbar-brand" href="#">
+              <img src="./LandingPage/Imagenes/logo-bookmark.svg" class="img-fluid">
+            </a>
+          </div>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
-            aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="col">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
+              aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
 
           <div class="collapse align-items-center bg-dark-primary opacity-95 text-white px-4" id="navbarToggle">
             <!--BURGER BUTTON-->
@@ -62,7 +66,7 @@
   </div>
   <div class="d-none d-md-block"> <!-- NAVBAR DESKTOP ONLY-->
     <nav class="navbar navbar-expand-md navbar-light bg-white">
-      <div class="container my-4">
+      <div class="row my-4">
         <a class="navbar-brand" href="#">
           <img src="./LandingPage/Imagenes/logo-bookmark.svg" class="img-fluid">
         </a>
@@ -544,19 +548,23 @@
 
     <footer class="footer mt-auto py-3 bg-dark-primary text-center"> <!--MOBILE FOOTER DARK-->
 
-      <div class="container justify-content-center">
+      <div class="row justify-content-center">
         <a class="navbar-brand" href="#">
-          <img src="./LandingPage/Imagenes/logo-bookmark2.svg" class="logo" style="margin-top: 7%;">
+          <img src="./LandingPage/Imagenes/logo-bookmark2.svg" class="logo mb-3" style="margin-top: 7%;">
         </a>
       </div>
-      <div class="container justify-content-center">
-        <a class="nav-link active text-white my-5" href="#">FEATURES</a>
-        <a class="nav-link active text-white my-5" href="#">PRICING</a>
-        <a class="nav-link active text-white my-5" href="#">CONTACT</a>
+      <div class="row justify-content-center">
+        <a class="nav-link active text-white my-3" href="#">FEATURES</a>
+        <a class="nav-link active text-white my-3" href="#">PRICING</a>
+        <a class="nav-link active text-white my-3" href="#">CONTACT</a>
       </div>
-      <div class="container justify-content-center" style="margin-bottom: 7%;">
-        <a href="#"><img src="./LandingPage/Imagenes/icon-facebook.svg" class="mx-3"></a>
-        <a href="#"><img src="./LandingPage/Imagenes/icon-twitter.svg" class="mx-3"></a>
+      <div class="row d-flex flex-column align-items-center mt-3" style="margin-bottom: 7%;">
+        <div>
+          <a href="#"><img onmouseenter="hoverF(this)" onmouseleave="unHoverF(this)"
+              src="./LandingPage/Imagenes/icon-facebook.svg" class="mx-3 img-fluid fb"></a>
+          <a href="#"><img onmouseenter="hoverT(this)" onmouseleave="unHoverT(this)"
+              src="./LandingPage/Imagenes/icon-twitter.svg" class="mx-3 img-fluid twt"></a>
+        </div>
       </div>
 
     </footer>
@@ -567,12 +575,12 @@
 
     <footer class="footer mt-auto py-3 bg-primary text-center"> <!--DESKTOP FOOTER-->
 
-      <div class="container d-flex justify-content-center" style="margin-top: 2%; margin-bottom: 3%;">
+      <div class="row d-flex justify-content-center" style="margin-top: 2%; margin-bottom: 3%;">
         <div class="col-6 bg-primary">
           <h5 class="text-center text-white py-3 fw-light">35.000+ ALREADY JOINED</h5>
           <h2 class="text-center text-white py-3">Stay up-to-date with what we are doing</h2>
           <form class="row justify-content-center needs-validation" novalidate>
-            <div class="col-6">
+            <div class="col-7">
               <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address"
                 style="width:100%;" required>
               <div class="invalid-feedback text-white bg-secondary fst-italic fs-6 rounded" style="width: 100%;">
@@ -589,23 +597,24 @@
     </footer>
 
     <footer class="footer mt-auto py-3 bg-dark-primary text-center"> <!--DESKTOP FOOTER DARK-->
-      <div class="container">
-        <nav class="navbar">
-          <div class="container d-flex">
-            <a class="navbar-brand" href="#">
-              <img src="./LandingPage/Imagenes/logo-bookmark2.svg" class="img-fluid logo">
-            </a>
-            <a class="nav-link active text-white" href="#">FEATURES</a>
-            <a class="nav-link active text-white" href="#">PRICING</a>
-            <a class="nav-link active text-white" href="#">CONTACT</a>
-            <div>
-              <a href="#"><img onmouseenter="hoverF(this)" onmouseleave="unHoverF(this)"
-                  src="./LandingPage/Imagenes/icon-facebook.svg" class="mx-3 img-fluid fb"></a>
-              <a href="#"><img onmouseenter="hoverT(this)" onmouseleave="unHoverT(this)"
-                  src="./LandingPage/Imagenes/icon-twitter.svg" class="mx-3 img-fluid twt"></a>
-            </div>
-          </div>
-        </nav>
+      <div class="row">
+        <div class="col my-3">
+          <a class="navbar-brand" href="#">
+            <img src="./LandingPage/Imagenes/logo-bookmark2.svg" class="img-fluid logo">
+          </a>
+        </div>
+        <div class="col d-flex my-3">
+          <a class="nav-link active text-white mx-3" href="#">FEATURES</a>
+          <a class="nav-link active text-white mx-3" href="#">PRICING</a>
+          <a class="nav-link active text-white mx-3" href="#">CONTACT</a>
+        </div>
+        <div class="col my-3">
+          <a href="#"><img onmouseenter="hoverF(this)" onmouseleave="unHoverF(this)"
+              src="./LandingPage/Imagenes/icon-facebook.svg" class="mx-3 img-fluid fb"></a>
+          <a href="#"><img onmouseenter="hoverT(this)" onmouseleave="unHoverT(this)"
+              src="./LandingPage/Imagenes/icon-twitter.svg" class="mx-3 img-fluid twt"></a>
+        </div>
+
       </div>
     </footer>
 
