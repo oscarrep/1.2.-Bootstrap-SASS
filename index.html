@@ -512,7 +512,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="d-flex justify-content-center"> <!--INFO BUTTON-->
         <button class="btn btn-primary py-2 my-2 px-4 shadow"> More Info </button>
       </div>
@@ -530,12 +530,13 @@
           <h2 class="text-center text-white py-3">Stay up-to-date with what we are doing</h2>
         </div>
 
-        <form>
+        <form class="needs-validation" novalidate>
           <div class="my-3">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address"
-              aria-describedby="email">
-            <button type="button" class="btn btn-secondary shadow text-white btn-sm px-4 py-2 my-3 w-100">Contact
-              Us</button>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
+            <div class="invalid-feedback text-white bg-secondary fst-italic fs-6 rounded" style="width: 100%;">
+              Whoops, make sure it's an email</div>
+            <button type="submit" class="btn btn-secondary shadow text-white btn-sm px-4 py-2 my-3 w-100">
+              Contact Us</button>
           </div>
         </form>
       </div>
@@ -570,10 +571,16 @@
         <div class="col-6 bg-primary">
           <h5 class="text-center text-white py-3 fw-light">35.000+ ALREADY JOINED</h5>
           <h2 class="text-center text-white py-3">Stay up-to-date with what we are doing</h2>
-          <form class="d-flex justify-content-center align-items-center mt-3">
-            <input type="email" class="form-control mx-3" id="inputEmail" placeholder="Enter your email address"
-              aria-describedby="email" style="width: 50%;">
-            <button type="button" class="btn btn-secondary text-white btn-sm px-4 py-2">Contact Us</button>
+          <form class="row justify-content-center needs-validation" novalidate>
+            <div class="col-6">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address"
+                style="width:100%;" required>
+              <div class="invalid-feedback text-white bg-secondary fst-italic fs-6 rounded" style="width: 100%;">
+                Whoops, make sure it's an email</div>
+            </div>
+            <div class="col-4">
+              <button type="submit" class="btn btn-secondary text-white btn-sm px-4 py-2">Contact Us</button>
+            </div>
           </form>
         </div>
 
@@ -599,6 +606,29 @@
         </nav>
       </div>
     </footer>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
   </div>
 
 </body>
