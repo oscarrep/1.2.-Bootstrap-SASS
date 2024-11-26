@@ -11,3 +11,4 @@ SASS
 
 #### Instal·lació
 Clona aquest repositori: -> git clone
+npm install
